@@ -1,10 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int kuadrat( int x){
+// reporter
+int kuadrat( int x){ // fungsi kembalian
     int y;
     y=x*x;
     return y;
+}
+// worker
+void tampilkan( int input){
+    cout << "menampilkan dgn void\n";
+    cout<< input<< endl;
+
 }
 
 int tambah(int a, int b){
@@ -21,6 +28,7 @@ int main(int argc, char const *argv[])
 
     hasil =kuadrat(input);
     cout<<hasil<< endl;
+    tampilkan(hasil);
 
     cout<< "masukan nilai a : ";
     cin>> a;
